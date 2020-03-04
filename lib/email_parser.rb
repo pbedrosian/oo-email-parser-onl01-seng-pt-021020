@@ -4,6 +4,8 @@
 # or whitespace (' ').
 class EmailAddressParser
 
+  attr_accessor :email_addresses
+
   def self.parse
     split(/[,\s]+/).uniq
   end
